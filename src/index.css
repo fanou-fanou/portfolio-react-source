@@ -1,0 +1,263 @@
+:root {
+    --color-bg: rgb(19, 41, 61);
+    --color-text: rgb(232, 241, 242);
+    --color-accent: rgb(174, 132, 126);
+    --color-border: rgb(232, 241, 242);
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 17px;
+    font-family: Roboto;
+}
+
+nav {
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.me {
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-accent);
+    font-size: 45px;
+}
+
+.project-link {
+    color: unset;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.btn-contact {
+    color: var(--color-text);
+    background-color: rgba(0, 101, 148, 0);
+    border: 2px solid var(--color-accent);
+    border-radius: 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 10px 16px;
+}
+
+.btn-contact\:hover {
+    background-color: var(--color-accent);
+}
+
+.btn-more {
+    color: var(--color-accent);
+    background-color: rgba(0, 101, 148, 0);
+    border: 2px solid var(--color-accent);
+    border-radius: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 7px 16px;
+}
+
+.btn-more\:hover {
+    background-color: var(--color-accent);
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    color: var(--color-accent);
+}
+
+header h1 span.name {
+    font-size: 70px;
+    color: var(--color-text);
+    display: block;
+    line-height: 1.2;
+    margin: 14px 0;
+}
+
+.services {
+    background-color: rgb(21, 48, 73);
+    padding: 130px 0;
+}
+
+.decorated-heading {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
+.decorated-heading::before,
+.decorated-heading::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--accent, #a4867e);
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.service>\* {
+    margin: 0;
+}
+
+.service {
+    border-radius: 8px;
+    padding: 40px 40px;
+    border: solid 1px rgba(174, 132, 126, 0.668);
+    cursor: pointer;
+}
+
+.service h3 {
+    font-size: 20px;
+}
+
+.service:hover {
+    border: solid 1px var(--color-accent);
+
+    h3 {
+        color: var(--color-accent);
+    }
+}
+
+.projet {
+    border-radius: 8px;
+    background-color: rgb(21, 48, 73);
+}
+
+.projet img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.projet .content {
+    padding: 30px;
+}
+
+.projet .content \* {
+    margin-bottom: 30px;
+}
+
+.tech {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.project-section {
+    padding: 130px 0;
+}
+
+.social {
+    background-color: rgb(21, 48, 73);
+    padding: 130px 0;
+}
+
+.social a {
+    display: flex;
+    background-color: var(--color-bg);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: unset;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.social img {
+    margin-right: 10px;
+}
+
+footer {
+    border: solid 1px rgba(58, 114, 166, 0.186);
+    background-color: var(--color-bg);
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-section {
+    padding: 130px 0;
+}
+
+form input,
+textarea {
+    background: transparent !important;
+    border-radius: 0 !important;
+    padding: 10px !important;
+    color: var(--color-text) !important;
+}
+
+.add-pad {
+    padding: 130px 0;
+}
+
+.detail h1 {
+    margin-bottom: 30px;
+}
+
+.detail h2 {
+    margin-top: 30px;
+}
+
+.detail h3 {
+    margin-top: 30px;
+}
+
+.detail p {
+    margin: 40px 0;
+}
+
+.detail a {
+    text-decoration: none;
+    color: rgb(126, 187, 244);
+
+}
+
+.img-me {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -1px 2px 12px 2px #9ca2a8cc;
+}
+
+@media(max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+        color: var(--color-accent);
+    }
+
+    header h1 span.name {
+        font-size: 55px;
+        color: var(--color-text);
+        display: block;
+        line-height: 1.2;
+        margin: 14px 0;
+    }
+
+    .img-me {
+        margin-top: 50px;
+        width: 300px;
+        height: 300px;
+    }
+}
