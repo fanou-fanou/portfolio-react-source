@@ -27,7 +27,7 @@ export default function Tactinfo() {
                         <li>Authentification sécurisée, gestion des rôles, architecture modulaire</li>
                     </ul>
 
-                    <Link to={""}>📁 Code source disponible sur GitHub -  cliquez ici</Link>
+                    <Link to={"https://github.com/fanou-fanou/tactinfo"} target="_blank">📁 Code source disponible sur GitHub -  cliquez ici</Link>
                 </div>
             </div>
         </div>
