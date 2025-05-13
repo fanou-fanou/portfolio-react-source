@@ -8,6 +8,7 @@ import G4s from "./pages/projects/G4s";
 import Inspay from "./pages/projects/Inspay";
 import Diariko from "./pages/projects/Diariko";
 import Ataomad from "./pages/projects/Ataomad";
+import Error404 from "./pages/Error404";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
             { path: "projects/details/diariko", element: <Diariko /> },
             { path: "projects/details/ataomad", element: <Ataomad /> },
             { path: "projects/details/inspay-lycee-fjkm-fenoarivo", element: <Inspay /> },
+            { path: "*", element: <Error404 /> }
         ]
     }
 ]);

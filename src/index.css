@@ -261,3 +261,17 @@ textarea {
         height: 300px;
     }
 }
+
+
+.error {
+    text-align: center;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error a {
+    margin-top: 20px;
+}
